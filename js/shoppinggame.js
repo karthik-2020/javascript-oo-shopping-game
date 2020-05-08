@@ -84,7 +84,7 @@ class Rating{
         } else if (value > 7) {
             this.rate = "EXCEPTIONAL";
         } else {
-        rate = "BAD";
+        this.rate = "BAD";
         }
     }
 }
