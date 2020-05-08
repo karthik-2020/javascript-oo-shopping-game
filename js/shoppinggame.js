@@ -13,20 +13,20 @@ let player = {
     name,
     score,
     items,
-    getCurrentScore(){
+    getCurrentScore() {
         return this.score;
     },
-    addPoints(points){
+    addPoints(points) {
         this.score = this.score + this.points;
     },
-    deductPoints(points){
+    deductPoints(points) {
         this.score = this.score - this.points;
     }
 
 };
 
 // Define the Product class - write the Constructor function for Product class here
-function product(id, name, price, expiryDate){
+function product(id, name, price, expiryDate) {
     this.id = id;
     this.name = name;
     this.price = price;
@@ -53,13 +53,13 @@ Object.defineProperty(product.prototype, 'daysToExpire', {
 })
 
 // Add method getDetails to Product here
-product.prototype.getDetails = function (){
+product.prototype.getDetails = function () {
     return `Product Name: ${this.name} , Product Price: ${this.price}`;
 
 }
 
 // Define the MagicProduct class here
-function MagicProduct(id, name, price, expiryDate, points, isBonus){
+function MagicProduct(id, name, price, expiryDate, points, isBonus) {
 
     product.call(this, id, name, price, expiryDate);
     this.points = points;
@@ -71,7 +71,7 @@ MagicProduct.prototype = Object.create(product.prototype);
 
 
 // Define Rating class here
-class Rating{
+class Rating {
     constructor() {
         this.rate = "";
     }
