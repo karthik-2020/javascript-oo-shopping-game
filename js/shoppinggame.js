@@ -8,7 +8,7 @@ const items = 0;
 
 // Define the player object here
 
-const player = {
+let player = {
 
     name,
     score,
